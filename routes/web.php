@@ -3,6 +3,7 @@
 use App\Http\Controllers\BackPanel\AdminController;
 use App\Http\Controllers\BackPanel\ComercController;
 use App\Http\Controllers\BackPanel\OperacController;
+use App\Http\Controllers\BackPanel\AniversController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,9 +22,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -43,4 +41,9 @@ Route::middleware(['auth','role:comerc'])->group(function () {
 
 Route::middleware(['auth','role:operac'])->group(function () {
     Route::get('operac/dashboard', [OperacController::class, 'dashboard']);
+});
+
+
+Route::middleware(['auth','role:anivers'])->group(function () {
+    Route::get('anivers/dashboard', [AniversController::class, 'dashboard']);
 });
