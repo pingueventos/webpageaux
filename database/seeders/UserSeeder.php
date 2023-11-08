@@ -27,7 +27,6 @@ class UserSeeder extends Seeder
                 'email' => 'pingu@operac.com',
                 'password' => Hash::make('Op3raci0n@l%2023$$'),
                 'role' => 'operac'
-
             ],
 
             [
@@ -35,7 +34,6 @@ class UserSeeder extends Seeder
                 'email' => 'pingu@comerc.com',
                 'password' => Hash::make('Com3rci@l%2023&&'),
                 'role' => 'comerc'
-
             ],
 
             [
@@ -43,7 +41,6 @@ class UserSeeder extends Seeder
                 'email' => 'pingu@anivers.com',
                 'password' => Hash::make('s3nha!'),
                 'role' => 'anivers'
-
             ],
 
         ]);
