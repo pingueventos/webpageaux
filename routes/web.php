@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ConvidadosController;
 use App\Http\Controllers\BackPanel\AdminController;
 use App\Http\Controllers\BackPanel\ComercController;
 use App\Http\Controllers\BackPanel\OperacController;
@@ -49,6 +50,14 @@ Route::middleware(['auth','role:admin'])->group(function () {
     Route::get('admin/dashboard/festasaprovadas', function(){
         return view('admin.lista-solicitacoes.aprovadas');
     }) -> name('aprovada');
+
+    Route::get('admin/dashboard/pesquisadesatisfacao', function(){
+        return view('admin.pesquisa');
+    }) -> name('resultadopesquisa');
+
+    Route::get('admin/dashboard/editar_recomendacoes', function(){
+        return view('admin.recomendacoes.recomprefesta');
+    }) -> name('editarrecomendacoes');
 });
 
 
@@ -84,3 +93,4 @@ Route::middleware(['auth','role:anivers'])->group(function () {
         return view('anivers.cancelar-reserva.cancelar');
     }) -> name('cancelar');
 });
+Route::resource("/forms", ConvidadosController::class);

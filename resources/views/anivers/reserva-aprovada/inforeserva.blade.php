@@ -1,5 +1,5 @@
 <h3>link do formulario</h3>
-<a href="{{ route('formulario') }}">Formulario de presenca</a><br>
+<a href="{{ route('forms.index') }}">Formulario de presenca</a><br>
 
 <h3>lista dos convidados confirmados:</h3>
 <ul><li>Pessoa 1</li></ul><br>

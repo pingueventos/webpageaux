@@ -4,6 +4,8 @@
 <a href="{{ route('aprovada') }}">Festas Aprovadas</a><br><br>
 <a href="{{ route('solicitacao') }}">Solicitacoes de Festa</a><br><br>
 <a href="{{ route('pacotes') }}">Pacotes de Comida</a><br><br><br>
+<a href="{{ route('editarrecomendacoes') }}">Recomendoes Pré-Festa</a><br><br>
+<a href="{{ route('resultadopesquisa') }}">Resultados: Pesquisa de Satisfação</a><br><br>
 
 
 <form method="POST" action="{{ route('logout') }}">
