@@ -9,5 +9,5 @@
 
 <h3>Lista de recomendacoes para a festa</h3><br>
 
-<a href="{{  route('aniversdashboard')  }}">Dashboard</a> <br><br>
+<a href="{{  route('aniversdashboard')  }}"><button>< Voltar (Dashboard)</button></a> <br><br>
 <button>CANCELAR RESERVA</button>

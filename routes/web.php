@@ -83,4 +83,7 @@ Route::middleware(['auth','role:anivers'])->group(function () {
     Route::get('anivers/dashboard/cancelar_reserva', function(){
         return view('anivers.cancelar-reserva.cancelar');
     }) -> name('cancelar');
+    Route::get('anivers/dashboard/cancelar_reserva', function(){
+        return view('anivers.cancelar-reserva.cancelar');
+    }) -> name('cancelar');
 });

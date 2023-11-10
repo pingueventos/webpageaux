@@ -10,7 +10,7 @@
 <h3>Opcao 2:</h3>
 <ul>
     <li>Descricao do pacote de comida</li>
-    <li>Descriacao das bebidas</li>
+    <li>Descricao das bebidas</li>
     <li>3 Imagens</li>
     <li>Preco</li>
 </ul>
